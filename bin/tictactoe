@@ -26,6 +26,7 @@ elsif players == "1"
   else
     game = Game.new(player_1 = Players::Human.new("O"), player_2 = Players::Computer.new("X"), board = Board.new)
     game.play
+    game.display
   end
 elsif players == "0"
   if first == "1"

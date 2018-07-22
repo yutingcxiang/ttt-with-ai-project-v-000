@@ -24,7 +24,7 @@ elsif players == "0"
   if first == "1"
     game = Game.new(player_1 = Players::Computer.new("X"), player_2 = Players::Computer.new("O"), board = Board.new)
   else
-    game = ame.new(player_1 = Players::Computer.new("O"), player_2 = Players::Computer.new("X"), board = Board.new)
+    game = Game.new(player_1 = Players::Computer.new("O"), player_2 = Players::Computer.new("X"), board = Board.new)
   end
 end
 

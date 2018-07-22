@@ -7,7 +7,7 @@ puts "Please select the number of players: 0, 1, or 2."
 players = gets.strip
 puts "Which player should go first?"
 first = gets.strip
-board.display
+Board.display
 
 if players == "2"
   if first == "1"

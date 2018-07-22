@@ -43,5 +43,4 @@ if game.over?
     game.play
   end
 end
-end
     

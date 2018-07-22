@@ -31,12 +31,13 @@ end
 game.play
 if !game.over?
   game.play
-if game.over?
+elsif game.over?
   puts "Would you like to play again? Y/N"
   again = gets.strip
   if again == "Y" 
     board.reset!
     game.play
   end
+end
 end
     

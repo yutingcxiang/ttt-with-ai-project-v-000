@@ -61,6 +61,7 @@ class Game
       @board.update(pos, player)
       @board.display
     else
+      @board.display
       turn
     end
   end

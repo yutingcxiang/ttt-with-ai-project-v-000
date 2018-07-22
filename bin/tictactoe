@@ -28,7 +28,8 @@ elsif players == "0"
   end
 end
 
-if !game.over
+
+if !game.over?
   game.play
 else
   puts "Would you like to play again? Y/N"

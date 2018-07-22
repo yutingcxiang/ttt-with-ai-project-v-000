@@ -29,6 +29,8 @@ elsif players == "0"
 end
 
 game.play
+if !game.over?
+  game.play
 if game.over?
   puts "Would you like to play again? Y/N"
   again = gets.strip

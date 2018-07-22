@@ -57,11 +57,11 @@ class Game
   def turn
     player = current_player
     pos = player.move(@board)
+    @board.display
     if @board.valid_move?(pos)
       @board.update(pos, player)
       @board.display
     else
-      @board.display
       turn
     end
   end

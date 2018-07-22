@@ -38,7 +38,7 @@ end
 if game.over?
   puts "Would you like to play again? Y/N"
   again = gets.strip
-  if again == "Y" 
+  unless again == "N" 
     board.reset!
     game.play
   end

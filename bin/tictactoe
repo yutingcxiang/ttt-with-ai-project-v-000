@@ -11,27 +11,31 @@ first = gets.strip
 if players == "2"
   if first == "1"
     game = Game.new(player_1 = Players::Human.new("X"), player_2 = Players::Human.new("O"), board = Board.new)
+    game.play
   else
     new = Game.new(player_1 = Players::Human.new("O"), player_2 = Players::Human.new("X"), board = Board.new)
+    game.play
   end
 elsif players == "1"
   if first == "1"
     game = Game.new(player_1 = Players::Human.new("X"), player_2 = Players::Computer.new("O"), board = Board.new)
+    game.play
   else
     game = Game.new(player_1 = Players::Human.new("O"), player_2 = Players::Computer.new("X"), board = Board.new)
+    game.play
   end
 elsif players == "0"
   if first == "1"
     game = Game.new(player_1 = Players::Computer.new("X"), player_2 = Players::Computer.new("O"), board = Board.new)
+    game.play
   else
     game = Game.new(player_1 = Players::Computer.new("O"), player_2 = Players::Computer.new("X"), board = Board.new)
+    game.play
   end
 end
 
-game.play
-if !game.over?
-  game.play
-elsif game.over?
+
+if game.over?
   puts "Would you like to play again? Y/N"
   again = gets.strip
   if again == "Y" 
